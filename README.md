@@ -114,12 +114,6 @@ Sentence Embedding (768d)
 - Lower Layers: Smaller LRs to preserve pre-trained weights.
 - Task Heads: Assigned the base LR (5e-5) to rapidly learn new patterns.
 
-### Learning Rate Distribution
-- Task-specific heads: 5e-5
-- Upper BERT layers: 3e-5
-- Middle BERT layers: 2e-5
-- Lower BERT layers: 1e-5
-
 ### Benefits
 - Allows different layers to learn at appropriate rates.
 - Reduces the risk of catastrophic forgetting by stabilizing lower layers.
